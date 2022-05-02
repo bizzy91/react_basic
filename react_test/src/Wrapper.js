@@ -9,7 +9,7 @@ function Wrapper({ children }) {
   };
   return (
     <div style={style}>
-      {/*  */}
+      {/* Wrapper 로 감쌀 자식 태그 */}
       {children}
     </div>
   )
