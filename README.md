@@ -14,3 +14,5 @@ $ npx create-react-app react_test
 $ cd react_test
 $ yarn start
 ```
+
+다른 컴퓨터에서 push test
