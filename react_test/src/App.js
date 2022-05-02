@@ -4,6 +4,7 @@ import Wrapper from './Wrapper';
 import './App.css';
 import Counter from './Counter';
 import InputSample from './InputSample';
+import ManyInputSample from './ManyInputSample';
 
 
 function App() {
@@ -49,6 +50,8 @@ function App() {
 
       {/* input 상태 관리하기 */}
       <InputSample />
+
+      <ManyInputSample />
 
     </div>
   );
