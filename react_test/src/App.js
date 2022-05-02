@@ -34,9 +34,12 @@ function App() {
       <Hello color="pink"/>
         
       {/* Wrappper 로 자식 요소(child) 감싸기 */}
-      <Wrapper>
+      <Wrapper>        
         <Hello name="react" color="red"/>
         <Hello color="pink"/>
+
+        {/* 조건에 따른 랜더링, isSpecial만 넣어주어도 isSpecial={true}와 동일하다. */}
+        <Hello name="react" color="red" isSpecial={true}/>
       </Wrapper>
     </div>
   );
