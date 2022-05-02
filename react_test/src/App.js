@@ -2,6 +2,7 @@ import React from 'react';
 import Hello from './Hello';
 import Wrapper from './Wrapper';
 import './App.css';
+import Counter from './Counter';
 
 
 function App() {
@@ -41,6 +42,8 @@ function App() {
         {/* 조건에 따른 랜더링, isSpecial만 넣어주어도 isSpecial={true}와 동일하다. */}
         <Hello name="react" color="red" isSpecial={true}/>
       </Wrapper>
+
+      <Counter />
     </div>
   );
 }
