@@ -1,6 +1,8 @@
 import React from 'react';
 import Hello from './Hello';
+import Wrapper from './Wrapper';
 import './App.css';
+
 
 function App() {
   // JSX 가 어떻게 쓰이는지 보여주기 위해 내부에 선언된 변수
@@ -26,6 +28,16 @@ function App() {
       <div style={style}>{name}</div>
       {/* 외부에서 선언한 스타일을 className 을 이용하여 적용하기 */}
       <div className="gray-box"></div>
+
+      {/* props 활용하기 */}
+      <Hello name="React!" color="red"/>
+      <Hello color="pink"/>
+        
+      {/* Wrappper 로 자식 요소(child) 감싸기 */}
+      <Wrapper>
+        <Hello name="react" color="red"/>
+        <Hello color="pink"/>
+      </Wrapper>
     </div>
   );
 }
